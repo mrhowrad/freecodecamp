@@ -1,0 +1,59 @@
+body {
+
+}
+
+header {
+  width: 83vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  width: 100%
+}
+
+#description {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  width: 83vw;
+  margin: 0 auto;
+  
+}
+
+fieldset {
+
+}
+
+input, textarea, select {
+  width: 100%
+}
+
+.form-group {
+  /*margin: 0 auto 1.25rem auto;
+  padding: 0.25rem */
+}
+
+p:last-of-type {
+  margin: unset
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-container label {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}

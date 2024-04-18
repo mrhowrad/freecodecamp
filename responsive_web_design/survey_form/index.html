@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Ride tester signup sheet</title>
+</head>
+<header> 
+  <h1 id="title">
+    Ride Tester Signup Form
+  </h1>
+  <p id="description">
+    Love roller coasters? Love the adrenaline rush of potentially unsafe working environments? Sign up below to be the first testers of our new rides!
+  </p> 
+</header>
+
+<body>
+  <form id="survey-form">
+    <fieldset  name="personal-details"> 
+      <legend>Personal details</legend>
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Enter your name"></input>  
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Enter your email address"></input>
+      </div>
+        
+      <div class="form-group"> 
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" required placeholder="You must be over 16" min=16 max=95></input>
+      </div>
+
+      <div id="form-group">
+        <label for="number">Height (cm)</label>
+        <input type="number" id="number" required placeholder="You must be taller than 100cm" min=100 max=200></input>
+      </div>
+    </fieldset>
+
+
+    <fieldset name="ride-preferences">
+      <legend>Ride preferences</legend>
+      <p id="ride-pref-description">Have you ridden a rollercoaster before? (required)</legend>
+      <div class="form-group">
+        <input type="radio" id="ridden-before-yes" name="ridden-before" value="ridden-before-yes" checked  class="inline"/>
+        <label for="ridden-before-yes">Yes</label>
+        <input type="radio" id="ridden-before-no" name="ridden-before" value="ridden-before-no" class="inline"/>
+        <label for="ridden-before-no">No</label>
+      </div>
+
+      <div class="form-group">
+        <label for="favourite-ride">What is your favourite <em>type</em> of ride at an amusement park?</label>
+        <select id="dropdown" required>
+          <option value="">(select one)</option>
+          <option value="rollercoaster">Rollercoasters</option>
+          <option value="gentle">Gentle rides (e.g. merry-go-round)</option>
+          <option value="water">Water rides (e.g. log flume)</option>
+          <option value="transport">Transport rides (e.g. monorails)</option>
+          <option value="thrill">Thrill rides other than rollercoasters (e.g. twisters)</option>
+          <option value="food">Food and gift stalls</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sign-up preferences</legend>
+      <div class="checkbox-container">
+        <p id="sign-up-description">Select all of the rides you would like to test (required)</p>
+        <label for="up-downer">Up and Downer
+          <input type="checkbox" id="up-downer" name="test-prefs" value="ud" class="inline">
+        </label>
+
+        <label for="ghoul-gullet">Ghoul's Gullet
+          <input type="checkbox" id="ghoul-gullet" name="test-prefs" value="gg" class="inline">
+        </label>
+
+        <label for="round-rapture">Roundabout Rapture
+          <input type="checkbox" id="round-rapture" name="test-prefs" value="rr" class="inline">
+        </label>
+
+        <label for="terror-twister">Terror Twister
+          <input type="checkbox" id="terror-twister" name="test-prefs" value="tt" class="inline">
+        </label>
+
+        <label for="lazy-looper">The Lazy Looper
+          <input type="checkbox" id="lazy-looper" name="test-prefs" value="ll" class="inline">
+        </label>
+
+        <label for="nightmare-nexus">Nightmare Nexus
+          <input type="checkbox" id="nightmare-nexus" name="test-prefs" value="nn" class="inline">
+        </label>
+
+      </div>
+
+      <div id="form-group">
+        <label for="additional-info">Any other preferences?
+          <textarea id='additional-info' rows="3" cols="30" placeholder="Asthma, heart conditions, insomnia, etc..."></textarea>
+        </label>
+    </fieldset>
+
+
+    <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="waiver-checked" /> I agree to <a href="https://www.freecodecamp.org/news/terms-of-service/">waive all future liability claims.</a>
+    <input type="submit" id="submit"/>
+
+  </form>
+</body>
+
+
+</html>
